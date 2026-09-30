@@ -52,6 +52,33 @@ O Pulso foi construído em torno de uma questão clínica e de governança docum
 
 Na Fase 2, essa questão deixa de ser apenas documentada e passa a ser testada: o classificador de risco é avaliado por subgrupo de gênero para verificar se sintomas atípicos femininos são classificados com menor precisão do que sintomas típicos masculinos. Essa análise reproduz, em escala reduzida, o problema que sistemas reais de triagem clínica enfrentam.
 
+```mermaid
+flowchart TD
+    subgraph REAL["Problema clínico real"]
+        A["Paciente com doença cardíaca"]
+        A --> B["Sintomas típicos\ndor no peito, irradiação, suor frio"]
+        A --> C["Sintomas atípicos\nfadiga, náusea, dor no maxilar"]
+        B --> D["Perfil masculino\n68% do dataset UCI Cleveland"]
+        C --> E["Perfil feminino\n32% do dataset UCI Cleveland"]
+    end
+
+    subgraph MODELO["O que o modelo aprende"]
+        D --> F["Vocabulário de alto risco\ndominado por termos clássicos"]
+        E --> G["Termos atípicos\nsub-representados no treino"]
+    end
+
+    subgraph RESULTADO["Consequência"]
+        F --> H["Alta precisão\nperfil masculino"]
+        G --> I["Menor precisão\nperfil feminino"]
+        H --> J["Viés reproduzido\npelo modelo"]
+        I --> J
+    end
+
+    style H fill:#27ae60,color:#fff
+    style I fill:#c0392b,color:#fff
+    style J fill:#e67e22,color:#fff
+```
+
 Referências:
 - Mosca L, et al. Sex/gender differences in cardiovascular disease prevention. Circulation. 2011;124(19):2145-54.
 - Mehta LS, et al. Acute Myocardial Infarction in Women. Circulation. 2016;133(9):916-47.
@@ -60,6 +87,52 @@ Referências:
 <p align="center">
   <img src="assets/diagram.png" alt="Diagrama do projeto Pulso — Fase 2" width="80%">
 </p>
+
+---
+
+## Pipeline da Fase 2
+
+```mermaid
+flowchart TD
+    subgraph DADOS["Dados de entrada"]
+        A["sintomas_pacientes.txt\n10 relatos clínicos"]
+        B["mapa_conhecimento.csv\n20 associações sintoma → doença"]
+        C["frases_risco.csv\n30 frases rotuladas"]
+        D["MIT-BIH Arrhythmia\n87.554 batimentos de ECG"]
+    end
+
+    subgraph PARTE1["Parte 1 — Extração de sintomas"]
+        E["Leitura dos relatos"]
+        F["Correspondência com o mapa"]
+        G["Diagnóstico sugerido"]
+        H["Análise de viés por gênero"]
+    end
+
+    subgraph PARTE2["Parte 2 — Classificador de risco"]
+        I["Vetorização TF-IDF"]
+        J["Regressão Logística"]
+        K["Avaliação: acurácia, F1"]
+        L["Viés: falsos negativos por subgrupo"]
+    end
+
+    subgraph IRALEM["Ir Além 2 — Rede Neural MLP"]
+        M["Pré-processamento\nbalanceamento + normalização"]
+        N["MLP Keras\n187 → 128 → 64 → 32 → 1"]
+        O["Avaliação\nacurácia + matriz de confusão"]
+    end
+
+    subgraph SAIDA["Saídas"]
+        P["resultados_diagnostico.csv"]
+        Q["Classificação: alto / baixo risco"]
+        R["Normal / Anormal"]
+    end
+
+    A --> E
+    B --> F
+    E --> F --> G --> H --> P
+    C --> I --> J --> K --> L --> Q
+    D --> M --> N --> O --> R
+```
 
 ---
 
@@ -184,16 +257,20 @@ As classes 1–4 são agrupadas em anormal, criando um problema de classificaç�
 
 ### Arquitetura MLP
 
-```
-Input (187 features)
-      ↓
-Dense(128, ReLU) → Dropout(0.3)
-      ↓
-Dense(64, ReLU)  → Dropout(0.3)
-      ↓
-Dense(32, ReLU)
-      ↓
-Dense(1, Sigmoid) → Normal / Anormal
+```mermaid
+flowchart LR
+    A["Input\n187 features"] --> B["Dense 128\nReLU"]
+    B --> C["Dropout 0.3"]
+    C --> D["Dense 64\nReLU"]
+    D --> E["Dropout 0.3"]
+    E --> F["Dense 32\nReLU"]
+    F --> G["Dense 1\nSigmoid"]
+    G --> H{"≥ 0.5?"}
+    H -->|"Sim"| I["Anormal"]
+    H -->|"Não"| J["Normal"]
+
+    style I fill:#c0392b,color:#fff
+    style J fill:#27ae60,color:#fff
 ```
 
 O Dropout reduz overfitting desativando neurônios aleatoriamente durante o treino. O EarlyStopping interrompe o treinamento quando a loss de validação para de melhorar, restaurando os melhores pesos automaticamente.
