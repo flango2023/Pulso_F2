@@ -57,6 +57,10 @@ Referências:
 - Mehta LS, et al. Acute Myocardial Infarction in Women. Circulation. 2016;133(9):916-47.
 - Arquivos Brasileiros de Cardiologia — artigos disponíveis no repositório da Fase 1
 
+<p align="center">
+  <img src="assets/diagram.png" alt="Diagrama do projeto Pulso — Fase 2" width="80%">
+</p>
+
 ---
 
 ## Estrutura do repositório
@@ -65,6 +69,9 @@ Referências:
 Pulso_F2/
 │
 ├── README.md
+│
+├── assets/
+│   └── diagram.png                       ← Diagrama da arquitetura do projeto
 │
 ├── data/
 │   ├── sintomas_pacientes.txt            ← 10 relatos clínicos simulados
