@@ -11,7 +11,7 @@
 <h2 align="center">Diagnóstico Automatizado: IA no Estetoscópio Digital</h2>
 
 <p align="center">
-  <strong>Autor:</strong> Richard Schmitz &nbsp;|&nbsp; <strong>RM:</strong> 567951<br>
+  <strong>Aluno:</strong> Richard Schmitz &nbsp;|&nbsp; <strong>RM:</strong> 567951<br>
   <strong>Curso EAD:</strong> Inteligência Artificial - FIAP &nbsp;|&nbsp; <strong>Fase:</strong> 2 — Pulso: Inteligência Cardiológica com Consciência de Dados
 </p>
 
