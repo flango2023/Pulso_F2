@@ -1,0 +1,31 @@
+frase,nivel_risco,perfil_genero
+"sinto dor forte no peito que irradia para o braço esquerdo",alto risco,masculino típico
+"pressão intensa no tórax que dura minutos e passa sozinha",alto risco,masculino típico
+"falta de ar durante a noite e coração acelerado sem motivo",alto risco,masculino típico
+"tontura e suor frio ao subir escadas quase desmaiei",alto risco,masculino típico
+"coração irregular como se pulasse uma batida com aperto no peito",alto risco,masculino típico
+"cansaço extremo há duas semanas sem conseguir terminar tarefas simples",alto risco,feminino atípico
+"náusea constante e dor estranha no maxilar e nas costas",alto risco,feminino atípico
+"falta de ar ao varrer a casa e tornozelos inchados",alto risco,feminino atípico
+"fadiga que não passa e sensação de peso no estômago",alto risco,feminino atípico
+"desconforto no peito que não é dor mas impede de dormir",alto risco,feminino atípico
+"leve cansaço após caminhada longa que passa com repouso",baixo risco,masculino típico
+"dor muscular nas costas após carregar peso no trabalho",baixo risco,masculino típico
+"coração acelerado após tomar muito café pela manhã",baixo risco,masculino típico
+"leve tontura ao levantar rápido da cama que passa em segundos",baixo risco,masculino típico
+"sensação de cansaço no fim do dia após jornada intensa",baixo risco,masculino típico
+"cansaço leve após semana de trabalho intenso e pouco sono",baixo risco,feminino atípico
+"leve desconforto no estômago após refeição pesada",baixo risco,feminino atípico
+"dor de cabeça leve no final do dia que passa com água",baixo risco,feminino atípico
+"sensação de peso nas pernas após ficar em pé o dia todo",baixo risco,feminino atípico
+"leve falta de ar ao correr que passa rapidamente com repouso",baixo risco,feminino atípico
+"dor no peito ao esforço intenso com irradiação para o pescoço",alto risco,masculino típico
+"palpitações frequentes com sensação de desmaio iminente",alto risco,ambos
+"inchaço nas pernas e ganho de peso rápido sem motivo aparente",alto risco,feminino atípico
+"suor frio e palidez súbita com fraqueza intensa",alto risco,ambos
+"dor no peito em repouso que dura mais de vinte minutos",alto risco,masculino típico
+"leve formigamento no braço esquerdo que passa sozinho",baixo risco,ambos
+"cansaço após exercício físico moderado que melhora com descanso",baixo risco,ambos
+"dor muscular leve no peito após exercício de musculação",baixo risco,masculino típico
+"ansiedade e coração acelerado em situação de estresse pontual",baixo risco,ambos
+"leve tontura após ficar muito tempo sem comer",baixo risco,ambos

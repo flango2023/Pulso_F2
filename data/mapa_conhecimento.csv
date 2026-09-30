@@ -1,0 +1,21 @@
+sintoma_1,sintoma_2,sintoma_3,doenca_associada,nivel_risco,perfil_predominante
+dor no peito,irradiação para o braço,suor frio,Infarto Agudo do Miocárdio,alto,masculino típico
+aperto no tórax,pressão no peito,dor que passa sozinha,Angina Instável,alto,masculino típico
+falta de ar,coração acelerado,palpitações,Arritmia Cardíaca,alto,masculino típico
+tontura,suor frio,quase desmaio,Síncope Cardíaca,alto,masculino típico
+coração irregular,batida pulando,aperto no peito,Fibrilação Atrial,alto,masculino típico
+cansaço extremo,fadiga persistente,sem energia,Insuficiência Cardíaca,alto,feminino atípico
+náusea,dor no maxilar,dor nas costas,Infarto Agudo do Miocárdio,alto,feminino atípico
+falta de ar ao esforço leve,tornozelos inchados,inchaço nas pernas,Insuficiência Cardíaca,alto,feminino atípico
+fadiga,sensação de peso no estômago,mal-estar geral,Doença Arterial Coronariana,alto,feminino atípico
+desconforto no peito,dificuldade para dormir,pressão leve,Angina Estável,médio,feminino atípico
+dor no peito ao esforço,melhora com repouso,cansaço,Angina Estável,médio,masculino típico
+palpitações,coração acelerado,ansiedade,Taquicardia Supraventricular,médio,ambos
+pressão alta,dor de cabeça,visão turva,Hipertensão Arterial,médio,ambos
+inchaço nas pernas,ganho de peso rápido,cansaço,Insuficiência Cardíaca Congestiva,alto,ambos
+dor no peito ao respirar,piora com inspiração,febre,Pericardite,médio,ambos
+batimento irregular,pulso fraco,tontura,Bradicardia,médio,ambos
+falta de ar em repouso,não consegue deitar,tosse noturna,Edema Pulmonar,alto,ambos
+dor irradiando para o pescoço,mandíbula,ombro esquerdo,Infarto Agudo do Miocárdio,alto,feminino atípico
+cansaço ao subir escadas,falta de ar ao caminhar,dor nas pernas,Doença Arterial Periférica,médio,ambos
+suor excessivo,palidez,fraqueza súbita,Choque Cardiogênico,alto,ambos

@@ -1,0 +1,15 @@
+# Relatos de Pacientes — Projeto Pulso Fase 2
+# Cada frase simula um relato clínico de triagem inicial.
+# Frases 1-5 apresentam perfil sintomático masculino (típico).
+# Frases 6-10 apresentam perfil sintomático feminino (atípico) — subdiagnóstico documentado na literatura.
+
+1. Há dois dias sinto uma dor forte no peito que irradia para o braço esquerdo e piora quando faço qualquer esforço físico.
+2. Acordo com falta de ar durante a noite e sinto o coração acelerado sem motivo aparente, como se fosse sair do peito.
+3. Tenho sentido uma pressão intensa no tórax que dura alguns minutos e passa sozinha, mas voltou três vezes essa semana.
+4. Sinto tontura e suor frio sempre que subo escadas, e ontem quase desmaiei no trabalho.
+5. Meu coração fica irregular às vezes, como se pulasse uma batida, e sinto um aperto no peito que me deixa com medo.
+6. Estou com cansaço extremo há duas semanas, mesmo dormindo bem, e não consigo terminar minhas tarefas do dia sem precisar parar para descansar.
+7. Sinto náusea constante e uma dor estranha nas costas e no maxilar que aparece e some, sem relação com alimentação.
+8. Tenho ficado com falta de ar ao fazer coisas simples como varrer a casa, e meus tornozelos estão inchados há alguns dias.
+9. Sinto uma fadiga que não passa e às vezes uma sensação de peso no estômago, como se tivesse comido demais, mas não comi nada.
+10. Estou com dificuldade para dormir por causa de uma sensação de desconforto no peito que não é exatamente dor, mas me incomoda bastante.
