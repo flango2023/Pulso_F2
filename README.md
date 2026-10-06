@@ -12,7 +12,7 @@
 
 <p align="center">
   <strong>Aluno:</strong> Richard Schmitz &nbsp;|&nbsp; <strong>RM:</strong> 567951<br>
-  <strong>Curso EAD:</strong> Inteligência Artificial - FIAP &nbsp;|&nbsp; <strong>Fase:</strong> 2 — Pulso: Inteligência Cardiológica com Consciência de Dados
+  <strong>Curso EAD:</strong> Inteligência Artificial - FIAP &nbsp;|&nbsp; <strong>Fase:</strong> 2  Pulso: Inteligência Cardiológica com Consciência de Dados
 </p>
 
 ---
@@ -24,7 +24,7 @@
 
 ---
 
-# Pulso — Fase 2: Diagnóstico Automatizado
+# Pulso Fase 2: Diagnóstico Automatizado
 
 O Pulso simula o ecossistema de dados de uma plataforma de cardiologia inteligente. Ao longo de sete fases, o projeto integra Machine Learning, IoT, Visão Computacional, NLP e séries temporais aplicados à saúde cardiovascular.
 
@@ -162,7 +162,7 @@ Pulso_F2/
 
 ---
 
-## Parte 1 — Relatos de pacientes e extração de sintomas
+## Parte 1: Relatos de pacientes e extração de sintomas
 
 ### Arquivos
 
@@ -191,7 +191,7 @@ O arquivo `mapa_conhecimento.csv` contém 20 associações entre sintomas e doen
 
 ---
 
-## Parte 2 — Classificador de risco com TF-IDF e Regressão Logística
+## Parte 2: Classificador de risco com TF-IDF e Regressão Logística
 
 ### Arquivos
 
@@ -234,7 +234,7 @@ A Regressão Logística foi escolhida por três razões alinhadas com o eixo de 
 
 ---
 
-## Ir Além 2 — Classificação de ECG com rede neural MLP
+## Ir Além 2: Classificação de ECG com rede neural MLP
 
 ### Dataset
 
@@ -273,7 +273,7 @@ flowchart LR
     style J fill:#27ae60,color:#fff
 ```
 
-O Dropout reduz overfitting desativando neurônios aleatoriamente durante o treino. O EarlyStopping interrompe o treinamento quando a loss de validação para de melhorar, restaurando os melhores pesos automaticamente.
+O Dropout reduz o overfitting desativando neurônios aleatoriamente durante o treino. O EarlyStopping interrompe o treinamento quando a loss de validação para de melhorar, restaurando os melhores pesos automaticamente.
 
 ### Conexão com a Fase 1
 
@@ -320,5 +320,7 @@ Richard Schmitz
 Graduação Tecnológica em Inteligência Artificial — FIAP
 Turma 2TIAOR-2026
 
+
 GitHub: https://github.com/flango2023
+
 LinkedIn: https://www.linkedin.com/in/richard-schmitz01/
