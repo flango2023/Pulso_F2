@@ -279,10 +279,17 @@ O Dropout reduz overfitting desativando neurônios aleatoriamente durante o trei
 
 O dataset MIT-BIH complementa o UCI Cleveland da Fase 1. Enquanto o Cleveland usa variáveis clínicas para prever doença coronariana, o MIT-BIH usa o sinal elétrico do coração para detectar arritmias — duas perspectivas complementares do mesmo problema cardiovascular. Nas fases seguintes, esses dois módulos poderão ser combinados em um sistema de triagem mais completo.
 
+### Sobre os arquivos do dataset
+
+> **Os arquivos `mitbih_train.csv` e `mitbih_test.csv` não estão incluídos neste repositório.**
+> O dataset tem aproximadamente 450 MB e é distribuído pelo Kaggle sob licença restrita, o que impede sua inclusão em repositórios públicos.
+>
+> Fonte oficial: https://www.kaggle.com/datasets/shayanfazeli/heartbeat
+
 ### Como executar no Google Colab
 
-1. Baixe o dataset em https://www.kaggle.com/datasets/shayanfazeli/heartbeat
-2. Faça upload de `mitbih_train.csv` e `mitbih_test.csv` no Colab
+1. Acesse https://www.kaggle.com/datasets/shayanfazeli/heartbeat e baixe o dataset (requer conta gratuita no Kaggle)
+2. Faça upload de `mitbih_train.csv` e `mitbih_test.csv` diretamente no Colab (painel esquerdo → ícone de pasta → Upload)
 3. Abra `notebooks/fase2_iralém2_mlp_ecg.ipynb` e execute todas as células
 
 ---
