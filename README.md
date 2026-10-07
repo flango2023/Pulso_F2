@@ -19,7 +19,7 @@
 
 ## Vídeo de demonstração
 
-> **[Demonstração completa - Fase 2](LINK_DO_VIDEO_AQUI)**
+> **[Demonstração completa - Fase 2](https://youtu.be/JKBgJ1k_x5w)**
 > Postado no YouTube como "não listado". Demonstra a extração de sintomas, o classificador de risco com TF-IDF e a rede neural MLP para classificação de ECG.
 
 ---
